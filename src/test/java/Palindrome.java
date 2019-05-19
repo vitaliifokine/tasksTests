@@ -1,10 +1,11 @@
 public class Palindrome {
 
     public static void main(String[] args) {
-        System.out.println(isPalindrom("radar"));
+        System.out.println(isPalindrom("pop"));
     }
 
     static boolean isPalindrom(String str) {
+        str = str.toLowerCase();
         if (str.length() == 0 || str.length() == 1) {
             return true;
         }
