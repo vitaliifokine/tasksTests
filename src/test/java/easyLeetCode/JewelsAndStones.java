@@ -41,12 +41,12 @@ public class JewelsAndStones {
     public static int numJewelsInStones2(String Jewel, String Stones) {
         Set<Character> set = new HashSet<>();
 
-        for(Character ch : Jewel.toCharArray()) {
-            set.add(ch);
+        for(Character jewel : Jewel.toCharArray()) {
+            set.add(jewel);
         }
         int count = 0;
-        for(Character b: Stones.toCharArray()) {
-            if(set.contains(b)) {
+        for(Character stone: Stones.toCharArray()) {
+            if(set.contains(stone)) {
                 count++;
             }
         }
