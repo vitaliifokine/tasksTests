@@ -21,13 +21,12 @@ public class JewelsAndStones {
     public static void main(String[] args) {
         System.out.println(numJewelsInStones("a", "AAAADaaDd"));
         System.out.println(numJewelsInStones2("ad", "AAAAaDDd"));
-
     }
 
     //O(n2) - bad solution
     public static int numJewelsInStones(String J, String S) {
         int count = 0;
-        for( int i = 0; i < J.length(); i++ )
+        for(int i = 0; i < J.length(); i++ )
         {
             for( int j = 0; j < S.length(); j++ )
             {
@@ -40,18 +39,17 @@ public class JewelsAndStones {
 
     //n - better complexity, but not ideal
     public static int numJewelsInStones2(String Jewel, String Stones) {
-        Set<Character> jewels = new HashSet<>();
-       // Set<Character> jewels2 = new HashSet<>();
+        Set<Character> set = new HashSet<>();
+
         for(Character ch : Jewel.toCharArray()) {
-            jewels.add(ch);
+            set.add(ch);
         }
         int count = 0;
-        for(Character ch: Stones.toCharArray()) {
-            if(jewels.contains(ch)) {
+        for(Character b: Stones.toCharArray()) {
+            if(set.contains(b)) {
                 count++;
             }
         }
         return count;
     }
-
 }
