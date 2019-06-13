@@ -53,10 +53,10 @@ public class ReverseTheString {
     }
 
 
-    public static String getRecursive3(String forRecursion) {
-        char array[] = new char[forRecursion.length()];
-        for (int i = 0; i < forRecursion.length(); i++) {
-            array[forRecursion.length()-1 - i] = forRecursion.charAt(i);
+    public static String getRecursive3(String input) {
+        char array[] = new char[input.length()];
+        for (int i = 0; i < input.length(); i++) {
+            array[input.length()-1 - i] = input.charAt(i);
         }
         StringBuilder stringBuilder = new StringBuilder();
         String output = stringBuilder.append(array).toString();
