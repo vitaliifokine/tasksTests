@@ -8,6 +8,7 @@ public class ReverseTheString {
         char[] vol = {'V', 'o', 'l'};
         System.out.println(getRecursivelyEncapsulated("Volodymyr"));
         System.out.println(getIteratively("Ivanitskiy"));
+        System.out.println(getByReverse("Coordination"));
     }
 
     public static String getReversedString(String input) {
@@ -29,15 +30,15 @@ public class ReverseTheString {
     }
 
     private static char[] getRecursively(char[] arr, int counter) {
-    counter++;
-    char temp = arr[counter];
-    arr[counter] = arr[arr.length - 1 - counter];
-    arr[arr.length - 1 - counter] = temp;
+        counter++;
+        char temp = arr[counter];
+        arr[counter] = arr[arr.length - 1 - counter];
+        arr[arr.length - 1 - counter] = temp;
         if (counter < arr.length / 2) {
-        getRecursively(arr, counter);
-    }
+            getRecursively(arr, counter);
+        }
         return arr;
-}
+    }
 
     private static String getRecursivelyEncapsulated(String string) {
         char data[] = new char[string.length()];
@@ -60,6 +61,12 @@ public class ReverseTheString {
         }
         StringBuilder stringBuilder = new StringBuilder();
         String output = stringBuilder.append(array).toString();
+        return output;
+    }
+
+    public static String getByReverse(String input) {
+        StringBuilder stringBuilder = new StringBuilder();
+        String output = stringBuilder.append(input).reverse().toString();
         return output;
     }
 
