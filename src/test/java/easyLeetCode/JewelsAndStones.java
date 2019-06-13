@@ -40,7 +40,6 @@ public class JewelsAndStones {
     //n - better complexity, but not ideal
     public static int numJewelsInStones2(String Jewel, String Stones) {
         Set<Character> set = new HashSet<>();
-
         for(Character jewel : Jewel.toCharArray()) {
             set.add(jewel);
         }

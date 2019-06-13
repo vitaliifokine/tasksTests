@@ -7,6 +7,10 @@ import java.util.List;
 public class Set {
     public static void main(String[] args) {
         System.out.println(toSet(Arrays.asList("v", "d", "d")));
+
+        for (int i=66; i<78; i++){
+            System.out.println( (char)i);
+        }
     }
 
     public static List toSet(List<Object> input){
