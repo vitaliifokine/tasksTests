@@ -7,7 +7,7 @@ public class ReverseTheString {
         System.out.println(getReversedString("Zelenskiy"));
         char[] vol = {'V', 'o', 'l'};
         System.out.println(getRecursivelyEncapsulated("Volodymyr"));
-        System.out.println(getRecursive3("Ivanitskiy"));
+        System.out.println(getIteratively("Ivanitskiy"));
     }
 
     public static String getReversedString(String input) {
@@ -53,7 +53,7 @@ public class ReverseTheString {
     }
 
 
-    public static String getRecursive3(String input) {
+    public static String getIteratively(String input) {
         char array[] = new char[input.length()];
         for (int i = 0; i < input.length(); i++) {
             array[input.length()-1 - i] = input.charAt(i);
