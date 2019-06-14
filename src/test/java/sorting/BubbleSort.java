@@ -1,12 +1,14 @@
 package sorting;
 
+
 import java.util.Arrays;
-import java.util.List;
 
 public class BubbleSort {
     public static void main(String[] args) {
         int[]array={6,8,45,1};
+        String[] fruitArray = {"Apple", "Banana", "Orange", "Grapes"};
         System.out.println(Arrays.toString(bubbleSort(array)));
+        System.out.println(Arrays.toString(bubbleSort2(fruitArray)));
     }
 
     static int[] bubbleSort(int[] arr) {
@@ -22,10 +24,20 @@ public class BubbleSort {
         return arr;
     }
 
+    static String[] bubbleSort2(String[] arr) {
+        String [] characters = new String[arr.length-1];
+        for (int i=0; i<arr.length-1;i++){
+//           String param = arr[i].charAt(i);
+//            characters[i] = param;
+        }
+
+        return characters;
+    }
+
 
     /// task sort words, idea to use bit value (char)
     // char s = (char)68; 65-90
-    // Input words - Cassandra, Abba, Coordination
+    // Input String words - Cassandra, Abba, Manage
     // get 0 of each word
     // get numeric value of char
     // sort numeric values
