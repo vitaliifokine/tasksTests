@@ -21,4 +21,13 @@ public class BubbleSort {
                 }
         return arr;
     }
+
+
+    /// task sort words, idea to use bit value (char)
+    // char s = (char)68; 65-90
+    // Input words - Cassandra, Abba, Coordination
+    // get 0 of each word
+    // get numeric value of char
+    // sort numeric values
+    //return result
 }
