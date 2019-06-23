@@ -6,11 +6,10 @@ import java.util.Arrays;
 public class BubbleSort {
     public static void main(String[] args) {
         int[]array={6,8,45,1};
-        String[] fruitArray = {"Apple", "Banana", "Orange", "Grapes"};
         System.out.println(Arrays.toString(bubbleSort(array)));
-        System.out.println(Arrays.toString(bubbleSort2(fruitArray)));
     }
 
+    //Iterative bubble sort
     static int[] bubbleSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++)
@@ -22,16 +21,6 @@ public class BubbleSort {
                     arr[j + 1] = temp;
                 }
         return arr;
-    }
-
-    static String[] bubbleSort2(String[] arr) {
-        String [] characters = new String[arr.length-1];
-        for (int i=0; i<arr.length-1;i++){
-//           String param = arr[i].charAt(i);
-//            characters[i] = param;
-        }
-
-        return characters;
     }
 
 
