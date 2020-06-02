@@ -26,7 +26,6 @@ public class StepsToZero {
                 num = num - 1;
             }
             count +=1;
-
         };
 
         return count;
