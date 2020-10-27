@@ -6,6 +6,8 @@ import java.util.List;
 
 public class Main {
 
+
+
     public static int romanToArabic(String input) {
         String romanNumeral = input.toUpperCase();
         int result = 0;
@@ -33,7 +35,7 @@ public class Main {
 
     @Test
     public void given2018Roman_WhenConvertingToArabic_ThenReturn2018() {
-        String roman2018 = "IV";
+        String roman2018 = "";
 
         int result = romanToArabic(roman2018);
 

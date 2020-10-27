@@ -1,5 +1,6 @@
 package easyLeetCode;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,10 +13,11 @@ public class TwoSum {
 
 
     public static void main(String[] args) {
-        int [] given = {5, 5, 3, 5, 5};
-        for (int i : twoSum(given, 10)){
-            System.out.printf(i +" ");
-        }
+        int [] given = {9, 5, 1, 1, 4, 5, 1};
+        System.out.println(Arrays.toString(twoSum2(given, 2)));
+
+
+
     }
 
     public static int[] twoSum(int[] nums, int target) {
@@ -36,5 +38,15 @@ public class TwoSum {
         return res;
     }
 
-
+    public static int[] twoSum2(int[] nums, int target) {
+        for (int counter = 0; counter < nums.length; counter++) {
+            for (int j = counter+1; j < nums.length; j++) {
+                if (nums[j] == target - nums[counter]) {
+                    // если число == цель - число, то выводим индексы
+                    return new int[] { counter, j };
+                }
+            }
+        }
+        throw new IllegalArgumentException("No two sum solution");
+    }
 }

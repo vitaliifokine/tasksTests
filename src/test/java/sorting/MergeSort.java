@@ -61,7 +61,7 @@ public class MergeSort {
         }
     }
 
-    // Main function that sorts arr[l..r] using
+    // chess.ChessBoard function that sorts arr[l..r] using
     // merge()
     public void sort(int arr[], int l, int r) {
         if (l < r) {

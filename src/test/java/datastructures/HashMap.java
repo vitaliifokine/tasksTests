@@ -2,7 +2,7 @@ package datastructures;
 
 import java.util.Map;
 
-public class HashMap {
+public class HashMap<C, I extends Number> {
 
     public static void main(String[] args) {
         Map<Object,Object> test =new java.util.HashMap<>();
